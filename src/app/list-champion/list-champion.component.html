@@ -1,0 +1,11 @@
+
+<div class="row">
+    <app-champion [champion]="yours"  (clickEvent)="anotherOne()" class="champion offset-5"></app-champion>
+</div>
+
+
+<div class="row">
+    <ng-container *ngFor="let champion of champions; let index = index">
+        <app-champion [champion]="champion" [index]="index" class="champion" (clickEvent)="suppression($event)"></app-champion>
+    </ng-container>
+</div>

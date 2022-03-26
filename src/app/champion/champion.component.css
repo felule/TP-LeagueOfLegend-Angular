@@ -1,0 +1,36 @@
+.championCart {
+    transition-duration: .4s,.4s,.4s;
+    box-shadow: 0 0 16px 14px rgb(0 0 0 / 20%);
+}
+
+.championCart:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    border: 1.5px solid #927345;
+}
+
+.squareAsset {
+    min-width: 134px;
+    min-height: 244px;
+    object-fit: fill;
+}
+
+.textStyle {
+    color: #937341;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+.texteBox {
+    background-color: black;
+    opacity: 0.75;
+    position: absolute;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid #927345;
+}
+
+

@@ -1,0 +1,4 @@
+<div *ngIf="champion?.name && champion?.img" class="championCart my-3 card" (click)="action()">
+    <img class="images" [src]="champion.img" class="squareAsset"/>
+    <span class="text-center textStyle texteBox p-2">{{champion.name}}</span>
+</div>

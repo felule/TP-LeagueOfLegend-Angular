@@ -1,0 +1,14 @@
+<form [formGroup]="championFormulaire" (ngSubmit)="onSubmit()" class="offset-4 mt-4">
+    <h1>Creation d'un champion</h1>
+    <div class="row col-6">
+        <input type="text" class="form-control pl-2" formControlName="name" placeholder="nom*">
+    </div>
+
+    <div class="row col-6 mt-3">
+        <input class="form-control" type="file" (change)="processFile(imageInput)" #imageInput>
+    </div>
+    
+    <div class="row col-2 mt-3">
+      <button type="submit" class="btn" id="submit" [disabled]="!championFormulaire.valid">Validation</button>
+    </div>
+</form>
